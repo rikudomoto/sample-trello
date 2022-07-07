@@ -5,14 +5,16 @@ import TaskCardTitle from './TaskCardTitle'
 import Tasks from './Tasks'
 import react, {useState} from 'react';
 
-const TaskCard = () => {
+const TaskCard = ({taskCardsList, setTaskCardsList, taskCard}) => {
   const [inputText, setInputText] = useState("");
   const [taskList, setTaskList] = useState([]);
 
   return (
     <div className='taskCard'>
+      <div className='taskCardTitleAndTaskCardDeleteButtonArea'>
       <TaskCardTitle />
-      <TaskCardDeleteButton />
+      <TaskCardDeleteButton taskCardsList={taskCardsList} setTaskCardsList={setTaskCardsList} taskCard={taskCard}/>
+      </div>
       <TaskAddInput 
         inputText = {inputText}
         setInputText = {setInputText}
