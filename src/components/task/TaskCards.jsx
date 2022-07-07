@@ -4,7 +4,7 @@ import AddTaskButton from './button/AddTaskButton'
 
 const TaskCards = () => {
   return (
-    <div>
+    <div className='taskCardsArea'>
       <TaskCard />
       <AddTaskButton />
     </div>
