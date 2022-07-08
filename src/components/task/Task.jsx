@@ -16,7 +16,7 @@ const Task = ({task, taskList, setTaskList, index}) => {
         >
           <p className='taskText'>{task.text}</p>
           <button className='taskTrashButton' onClick={() => handleDelete(task.id)}>
-            <i className="fa-solid fa-trash-can"></i>
+          <i className="fas fa-trash-alt"></i>
           </button>
         </div>
       )}
